@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+img {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.blur {
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+}
+li {
+  font-size: 30px;
+}
+.main {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hidden {
+  display: none;
+}
+#clock {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+#greeting {
+  margin-top: 0;
+  font-size: 100px;
+}
+#quote {
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#todo-form input,
+#login-form input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  height: 100px;
+  font-size: 50px;
+}
+#todo-form input {
+  width: 680px;
+}
+#login-form input {
+  width: 445px;
+}
+#todo-form input::placeholder,
+#login-form input::placeholder {
+  color: white;
+  font-size: 50px;
+}
+#weather {
+  position: fixed;
+  font-size: 20px;
+  right: 5%;
+  top: 3%;
+}
